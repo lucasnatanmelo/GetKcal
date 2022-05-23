@@ -15,26 +15,26 @@
     <div class="content">
       <form id="form">
         <div class="form-group">
-          <label for="gender">Seu sexo</label>
+          <label for="gender">Sexo</label>
           <select id="gender">
             <option value="male">Masculino</option>
             <option value="female">Feminino</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="age">Sua idade</label>
-          <input type="number" id="age" />
+          <label for="age">Idade</label>
+          <input type="number" step="1" min="1" required id="age" />
         </div>
         <div class="form-group">
-          <label for="weight">Seu peso</label>
-          <input type="number" id="weight" />
+          <label for="weight">Peso(kg)</label>
+          <input type="number" step="1" min="1" required id="weight" />
         </div>
         <div class="form-group">
-          <label for="height">Sua altura</label>
-          <input type="number" id="height" />
+          <label for="height">Altura(cm)</label>
+          <input type="number" step="1" min="1" required id="height" />
         </div>
         <div class="form-group">
-          <label for="activity_level">Seu nível de atividade física</label>
+          <label for="activity_level">Nível de atividade física</label>
           <select id="activity_level">
             <option value="1.2">Sedentário</option>
             <option value="1.375">Pouca atividade</option>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="form-group">
-          <button type="submit">Calcular!</button>
+          <button type="submit">CALCULAR</button>
         </div>
       </form>
       <div class="result-container" id="result"></div>

@@ -78,6 +78,7 @@ header {
 
 .result-container {
   margin-top: 50px;
+  padding-bottom: 15px;
 }
 
 .result-content {
@@ -85,6 +86,7 @@ header {
   background: #1A1A1A;
   border-radius: 5px;
   padding: 15px;
+  
 }
 
 .result-content ul {
