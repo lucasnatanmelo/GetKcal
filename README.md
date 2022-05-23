@@ -3,8 +3,8 @@
 Link: https://lucasnatanmelo.github.io/GetKcal/
 
 ## Sobre o projeto
-# Exercício proposto pela JStack, utilizando HTML, CSS e JavaScript
-Inforações nutricionais sobre metabolismo basal, peso ideal e calorias a consumir/perder.
+### Exercício proposto pela JStack, utilizando HTML, CSS e JavaScript
+### Informações nutricionais sobre metabolismo basal, peso ideal e calorias a consumir/perder.
 
 
 ![image](https://user-images.githubusercontent.com/100950738/169893344-c8f29f65-32fa-481b-ae46-1370a8f3b8a0.png)
