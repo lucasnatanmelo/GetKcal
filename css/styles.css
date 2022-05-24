@@ -8,16 +8,18 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  
 }
 
 body {
   background: #282828;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  width: 100vw;
 }
 
 .container {
-  width: 550px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -32,11 +34,13 @@ header {
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .form-group label {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Montserrat Semibold', sans-serif;
   margin-bottom: 5px;
 }
@@ -44,17 +48,18 @@ header {
 .form-group input,
 .form-group select {
   background: #1A1A1A;
-  width: 100%;
+  width: 70%;
   height: 45px;
   border: 1px solid transparent;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 15px;
   outline: none;
   transition: border-color 0.2s ease-in;
 }
+
 
 .form-group input:focus,
 .form-group select:focus {
@@ -66,6 +71,7 @@ header {
   border-radius: 5px;
   border: 0;
   height: 45px;
+  width: 300px;
   color: #1A1A1A;
   font-size: 16px;
   font-family: 'Montserrat Bold', sans-serif;
@@ -103,3 +109,8 @@ header {
 .result-content ul li strong {
   color: #FF7373;
 }
+
+.result-container h3{
+  margin-left: 15px
+}
+

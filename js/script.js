@@ -22,24 +22,29 @@ function handleSubmit(event) {
   const gainWeight = maintenance + 450;
 
   const layout = `
-    <h2>Aqui está o resultado:</h2>
+    <h3>Resultado:</h3>
 
     <div class="result-content">
       <ul>
         <li>
-          Seu índice de Massa Corporal indica <strong>${imc}</strong>
+          Seu índice de Massa Corporal indica: </br>
+          <strong>${imc}</strong>
         </li>
         <li>
-          Seu metabolismo basal é de <strong>${tmb} calorias</strong>
+          Seu metabolismo basal é de: </br>
+          <strong>${tmb} calorias</strong>
         </li>
         <li>
-          Para manter o seu peso você precisa consumir em média <strong>${maintenance} calorias</strong>
+          Para manter o seu peso você precisa consumir em média: </br>
+          <strong>${maintenance} calorias</strong>
         </li>
         <li>
-          Para perder peso você precisa consumir em média <strong>${loseWeight} calorias</strong>
+          Para perder peso você precisa consumir em média: </br>
+          <strong>${loseWeight} calorias</strong>
         </li>
         <li>
-          Para ganhar peso você precisa consumir em média <strong>${gainWeight} calorias</strong>
+          Para ganhar peso você precisa consumir em média: </br>
+          <strong>${gainWeight} calorias</strong>
         </li>
       </ul>
     </div>
@@ -65,13 +70,13 @@ function calculateImc(gender, weight, height){
   let imcPararamether = ((weight)/(heightToMeter*heightToMeter));
   if((gender === 'male')){
     if (imcPararamether >= 40){
-      return 'Obesidade Grau III Mórbida';
+      return 'Obesidade Grau III - Mórbida';
     }
     if((imcPararamether >= 30) && (imcPararamether < 40)){
-      return 'Obesidade Grau II Moderada';
+      return 'Obesidade Grau II - Moderada';
     }
     if((imcPararamether >= 25) && (imcPararamether < 30)){
-      return 'Obesidade Grau I leve';
+      return 'Obesidade Grau I - Leve';
     }
     if((imcPararamether >= 20) && (imcPararamether < 25)){
       return 'Peso Normal';
@@ -82,13 +87,13 @@ function calculateImc(gender, weight, height){
   } else{
     if((gender === 'female')){
     if (imcPararamether >= 40){
-      return 'Obesidade Grau III Mórbida';
+      return 'Obesidade Grau III - Mórbida';
     }
     if((imcPararamether >= 30) && (imcPararamether < 40)){
-      return 'Obesidade Grau II Moderada';
+      return 'Obesidade Grau II - Moderada';
     }
     if((imcPararamether >= 24) && (imcPararamether < 30)){
-      return 'Obesidade Grau I leve';
+      return 'Obesidade Grau I - Leve';
     }
     if((imcPararamether >= 19) && (imcPararamether < 24)){
       return 'Peso Normal';
